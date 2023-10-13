@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "dragons",
+	"version": "${version}",
+	"name": "Dragons",
+	"description": "This Mod adds Dragons and their kin to Minecraft",
+	"authors": [
+		"Azixc"
+	],
+	"contact": {
+		"sources": "https://github.com/4z1xc/Dragons",
+		"issues": "https://github.com/4z1xc/Dragons/issues",
+		"discord": "https://discord.gg/39Kyqgm43N"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dragons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dragons.modid.Dragons"
+		],
+		"fabric-datagen": [
+			"dragons.modid.DragonsDataGenerator"
+		]
+	},
+	"mixins": [
+		"dragons.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.23",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
